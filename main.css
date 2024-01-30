@@ -60,6 +60,10 @@ img{
   height: 50%;
 }
 
+span{
+  margin-right: 10px;
+}
+
 /* FOOTER*/
 footer{
   text-align: center;
