@@ -55,13 +55,18 @@ main{
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.store-item{
+  text-align: center;
+}
+
+
+.store-item span{
+  margin-right: 10px;
+}
+
 img{
   width: 50%;
   height: 50%;
-}
-
-span{
-  margin-right: 10px;
 }
 
 /* FOOTER*/
