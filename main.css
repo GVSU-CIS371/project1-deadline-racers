@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,500;1,9..40,600&display=swap');
 
 body,
 html {
@@ -6,32 +6,34 @@ html {
   padding: 0px;
   box-sizing: border-box;
   width: 100%;
-  font-family: 'Outfit', sans-serif;
+  font-family: 'DM Sans', sans-serif;
 }
 
 #app{
   display: grid;
   grid-template-rows: 5rem 1fr 3rem;
+  overflow-x: hidden;
 }
 
 
-/* HEADER: contains nav */
+/* HEADER SECTION */
 header{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0 2rem;
-  font-weight: 600;
+  padding: 0 4rem;
+  background-image: linear-gradient(90deg, #1f4e5f, #274156);
 }
 
 h1{
-  color: #220066;
+  font-family: 'DM Sans', sans-serif;
+  color: #ebebeb;
+  text-transform: uppercase;
 }
 
 nav{
   width: 50%;
-  background-color: #220066;
   border-radius: 2rem;
 }
 
@@ -44,36 +46,59 @@ nav ul{
 nav li a, nav li{
   text-decoration: none;
   list-style: none;
-  color: white;
+  color: #ebebeb;
+}
+
+nav ul li:hover, nav li a:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+  transition: .1s ease-out;
 }
 
 
-/* MAIN: contains all products */
+/* MAIN SECTION */
 main{
   margin: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 3rem;
 }
 
 .store-item{
+  padding: 1rem;
+  box-shadow: 0 0 10px 2px #f0f0f0;
+  border: 1px solid #274156;
+  border-radius: 2rem;
   text-align: center;
 }
 
 
+.store-item:hover{
+  /* background-color: gray; */
+  transform: scale(1.1);
+  /* text-align: center; */
+}
+
+.store-item p:first-of-type{
+  color: #1f4e5f;
+  font-weight: bold;
+}
+
 .store-item span{
   margin-right: 10px;
+  font-weight: bold;
+  color: #1f4e5f;
 }
 
 img{
-  width: 50%;
-  height: 50%;
+  width: 200px;
+  height: 200px;
+  grid-area: img;
 }
 
 /* FOOTER*/
 footer{
+  background-image: linear-gradient(90deg, #274156, #1f4e5f);
   text-align: center;
-  background-color: #220066;
   color: white;
-  border-radius: 20px;
-  margin: 0 1rem;
 }
