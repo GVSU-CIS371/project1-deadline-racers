@@ -74,9 +74,7 @@ main{
 
 
 .store-item:hover{
-  /* background-color: gray; */
   transform: scale(1.1);
-  /* text-align: center; */
 }
 
 .store-item p:first-of-type{
